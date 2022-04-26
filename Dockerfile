@@ -12,7 +12,7 @@ RUN \
     echo "http://mirrors.aliyun.com/alpine/latest-stable/main/" > /etc/apk/repositories; \
     echo "http://mirrors.aliyun.com/alpine/latest-stable/community/" >> /etc/apk/repositories; \
     apk upgrade; \
-    apk add --no-cache ca-certificates unzip curl bash bash-completion bash wget vim net-tools tzdata openjdk8; \
+    apk add --no-cache ca-certificates unzip curl bash bash-completion wget vim net-tools tzdata openjdk8; \
     rm -rf /tmp/* /var/cache/apk/*; \
     #make soft link to /usr/local/tomcat
     ln -s /usr/local/apache-tomcat-8.5.78 /usr/local/tomcat; \
